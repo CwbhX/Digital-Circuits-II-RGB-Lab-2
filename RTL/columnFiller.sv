@@ -30,7 +30,8 @@ module columnFiller(input clk, delayed_enable_300ns, enable,  // Set the global 
     logic countReset;
     logic countEnable;
     
-    binaryCounter counter(.clk(clk), .reset(countReset), .enable(countEnable), .out(count));
+    
+    binaryCounter #(.MAXVAL(32)) counter(.clk(clk), .reset(countReset), .enable(countEnable), .out(count));
     
     
     always_ff @ (posedge clk) begin             // For every clock cycle of the FPGA (10ns)

@@ -21,7 +21,7 @@
 
 module ledGen(input clk, enable, sclk,
 			  input [3:0] rowSelected,
-			  output [2:0] LED1, LED2);
+			  output logic [2:0] LED1, LED2);
 
 	always_ff @(posedge clk) begin
 		case(rowSelected)
@@ -33,6 +33,7 @@ module ledGen(input clk, enable, sclk,
 			4'd5 : begin LED1 <= 000; LED2 <= 111; end // Black / White
 			4'd6 : begin LED1 <= 000; LED2 <= 111; end // Black / White
 			4'd7 : begin LED1 <= 000; LED2 <= 111; end // Black / White
+			default : begin LED1 <= 010; LED2 <= 010; end
 			// 4'd8 : LED <= 100;
 			// 4'd9 : LED <= 110;
 			// 4'd10: LED <= 011;
