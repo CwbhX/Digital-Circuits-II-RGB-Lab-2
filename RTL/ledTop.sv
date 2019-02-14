@@ -22,10 +22,11 @@ module ledTop(input clk,
               output [2:0] LEDs1, LEDs2,
               output [2:0] rowSelect,
               output blank, latch, sclk);
-
-        logic clk_3Mhz;
-        clkdiv #(.DIVFREQ(3000000)) reduced_clk(.clk(clk), .reset(1'b0), .sclk(clk_3Mhz));
-        
+			  
+		logic [2:0] generatedLED;
+		
+        delay_enb #(.DELAY_NS(300)) enable_300ns(.clk(clk), .reset(1'b0), .clr(1'b0) .enb_out(sclk));
+        ledGen ledGen(.clk(clk), .sclk(sclk), .rowSelected(rowSelect), .LED(generatedLED));
         
 
 endmodule
