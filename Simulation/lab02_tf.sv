@@ -21,26 +21,33 @@
 module lab02_tf();
     // Inputs
     logic clk;
+    logic reset;
     
     // Outputs
     logic [2:0] generatedLED1;
     logic [2:0] generatedLED2;
 	logic [2:0] rowSelect;
-	logic blank, latch, clock;
+	logic blank, latch;
 
     
     
     initial
         forever begin
-            clk = 0; #10; clk = 0; #25;
+            clk = 0; #10; clk = 1; #10;
         end
     
-    ledTop uut(.clk(clk),
+    ledTop uut(.clk(clk), .reset(reset),
                .LED1(generatedLED1),
                .LED2(generatedLED2),
                .rowSelect(rowSelect),
                .blank(blank),
                .latch(latch),
                .sclk(sclk));
-
+    
+    initial begin
+        reset = 1;
+        #100;
+        reset = 0;
+    end
+    
 endmodule

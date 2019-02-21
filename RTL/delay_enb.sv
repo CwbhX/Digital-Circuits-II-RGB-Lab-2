@@ -1,3 +1,4 @@
+`timescale 1ns / 1ps
 //-----------------------------------------------------------------------------
 // Title         : delay_enb - parameterized clock enable generator
 // Project       : ECE 212 - Digital Circuits II

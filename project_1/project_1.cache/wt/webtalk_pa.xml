@@ -3,7 +3,7 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Wed Feb 13 17:03:03 2019">
+<application name="pa" timeStamp="Thu Feb 14 11:23:46 2019">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="fcbf42d01d0a442aab09a18c68a038ef" type="ProjectID"/>
 <property name="ProjectIteration" value="1" type="ProjectIteration"/>
@@ -17,18 +17,126 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
 </item>
 <item name="Java Command Handlers">
-<property name="AddSources" value="9" type="JavaHandler"/>
-<property name="EditDelete" value="3" type="JavaHandler"/>
+<property name="AddSources" value="12" type="JavaHandler"/>
+<property name="EditDelete" value="7" type="JavaHandler"/>
 <property name="NewProject" value="1" type="JavaHandler"/>
-<property name="OpenProject" value="1" type="JavaHandler"/>
+<property name="OpenProject" value="2" type="JavaHandler"/>
+<property name="ProjectSettingsCmdHandler" value="1" type="JavaHandler"/>
+<property name="RunSchematic" value="1" type="JavaHandler"/>
+<property name="RunSynthesis" value="1" type="JavaHandler"/>
+<property name="SetTopNode" value="3" type="JavaHandler"/>
+<property name="ShowView" value="2" type="JavaHandler"/>
+<property name="SimulationClose" value="7" type="JavaHandler"/>
+<property name="SimulationRun" value="14" type="JavaHandler"/>
+<property name="ViewTaskProjectManager" value="10" type="JavaHandler"/>
+<property name="ViewTaskSimulation" value="3" type="JavaHandler"/>
+<property name="ViewTaskSynthesis" value="1" type="JavaHandler"/>
+<property name="ZoomFit" value="2" type="JavaHandler"/>
 </item>
 <item name="Gui Resources Info">
-<property name="PAResourceEtoH.GettingStartedView_OPEN_PROJECT, Open Project" value="1" type="GuiResourceData"/>
+<property name="FINISH, Finish" value="1" type="GuiResourceData"/>
+<property name="NEXT, Next " value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.AddSrcWizard_SPECIFY_SIMULATION_SPECIFIC_HDL_FILES, Add or create simulation sources" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CmdMsgDialog_OK, OK" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CreateSrcFileDialog_FILE_LOCATION, Choose Location..., 1" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, columnFillerTest" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CreateSrcFileDialog_FILE_TYPE, SystemVerilog, 2" value="1" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, Hierarchy Update" value="1" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_GOTO_NETLIST_DESIGN, Open Synthesized Design" value="1" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_SET_AS_TOP, Set as Top" value="1" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, Run Behavioral Simulation" value="1" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_ZOOM_FIT, Schematic_zoom_fit" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, binaryPulser (binaryPulser.sv" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, ledTop (ledTop.sv" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources, sim_1, Syntax Error Files, columnFillerTest.sv], 15, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources, sim_1, Syntax Error Files, columnFillerTest.sv], 15, false, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources, sim_1, Syntax Error Files], 14" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources, sim_1, columnFillerTest (columnFillerTest.sv" value="5" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources, sim_1, lab02_tf (lab02_tf.sv" value="3" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Project Manager, Add Sources], 2, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Project Manager], 0, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Simulation, Run Simulation], 11, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Simulation], 9, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Synthesis, Synthesized Design, Schematic], 30, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.NetlistTreeView_NETLIST_TREE, [ledTop, Nets (37" value="2" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SrcChooserPanel_CREATE_FILE, Create File" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SrcMenu_IP_HIERARCHY, IP Hierarchy" value="4" type="GuiResourceData"/>
+<property name="PAResourceTtoZ.TaskBanner_CLOSE, (String" value="1" type="GuiResourceData"/>
+<property name="RDIResource.BaseDialog_OK, OK" value="4" type="GuiResourceData"/>
+<property name="RDIResource.GraphicalView_ZOOM_FIT, Waveform Viewer_zoom_fit" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 103, 190" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 109, 199" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 567, 74, false, false, false, true, false" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 57, 207" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 577, 75, false, false, false, true, false" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 630, 74, false, false, false, true, false" value="1" type="GuiResourceData"/>
+<property name="RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 996, 24" value="1" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, LED1[2:0]], 7" value="2" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, LED2[2:0]], 8" value="2" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, delayed_enable_300ns], 1, false" value="1" type="GuiResourceData"/>
+<property name="columnFillerTest.sv, 110, 586" value="1" type="GuiResourceData"/>
+<property name="columnFillerTest.sv, 110, 586, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="columnFillerTest.sv, 113, 631" value="1" type="GuiResourceData"/>
+<property name="columnFillerTest.sv, 130, 649" value="1" type="GuiResourceData"/>
+<property name="columnFillerTest.sv, 131, 626" value="1" type="GuiResourceData"/>
+<property name="columnFillerTest.sv, 132, 645" value="1" type="GuiResourceData"/>
+<property name="columnFillerTest.sv, 137, 377" value="1" type="GuiResourceData"/>
+<property name="columnFillerTest.sv, 137, 377, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="columnFillerTest.sv, 142, 415" value="1" type="GuiResourceData"/>
+<property name="columnFillerTest.sv, 146, 425" value="1" type="GuiResourceData"/>
+<property name="columnFillerTest.sv, 150, 643" value="1" type="GuiResourceData"/>
+<property name="columnFillerTest.sv, 163, 503" value="1" type="GuiResourceData"/>
+<property name="columnFillerTest.sv, 175, 639" value="1" type="GuiResourceData"/>
+<property name="columnFillerTest.sv, 182, 575" value="1" type="GuiResourceData"/>
+<property name="columnFillerTest.sv, 183, 586" value="1" type="GuiResourceData"/>
+<property name="columnFillerTest.sv, 189, 568" value="1" type="GuiResourceData"/>
+<property name="columnFillerTest.sv, 192, 596" value="1" type="GuiResourceData"/>
+<property name="columnFillerTest.sv, 199, 658" value="1" type="GuiResourceData"/>
+<property name="columnFillerTest.sv, 20, 549" value="1" type="GuiResourceData"/>
+<property name="columnFillerTest.sv, 206, 635" value="1" type="GuiResourceData"/>
+<property name="columnFillerTest.sv, 208, 606" value="1" type="GuiResourceData"/>
+<property name="columnFillerTest.sv, 214, 636" value="1" type="GuiResourceData"/>
+<property name="columnFillerTest.sv, 215, 574" value="1" type="GuiResourceData"/>
+<property name="columnFillerTest.sv, 220, 589" value="1" type="GuiResourceData"/>
+<property name="columnFillerTest.sv, 257, 599" value="1" type="GuiResourceData"/>
+<property name="columnFillerTest.sv, 26, 416" value="1" type="GuiResourceData"/>
+<property name="columnFillerTest.sv, 265, 532" value="1" type="GuiResourceData"/>
+<property name="columnFillerTest.sv, 273, 637" value="1" type="GuiResourceData"/>
+<property name="columnFillerTest.sv, 29, 416" value="1" type="GuiResourceData"/>
+<property name="columnFillerTest.sv, 298, 606" value="1" type="GuiResourceData"/>
+<property name="columnFillerTest.sv, 298, 613" value="1" type="GuiResourceData"/>
+<property name="columnFillerTest.sv, 303, 387" value="1" type="GuiResourceData"/>
+<property name="columnFillerTest.sv, 304, 581" value="1" type="GuiResourceData"/>
+<property name="columnFillerTest.sv, 314, 401" value="1" type="GuiResourceData"/>
+<property name="columnFillerTest.sv, 315, 481" value="1" type="GuiResourceData"/>
+<property name="columnFillerTest.sv, 330, 380" value="1" type="GuiResourceData"/>
+<property name="columnFillerTest.sv, 345, 606" value="1" type="GuiResourceData"/>
+<property name="columnFillerTest.sv, 346, 557" value="1" type="GuiResourceData"/>
+<property name="columnFillerTest.sv, 348, 382" value="1" type="GuiResourceData"/>
+<property name="columnFillerTest.sv, 352, 603" value="1" type="GuiResourceData"/>
+<property name="columnFillerTest.sv, 363, 605" value="1" type="GuiResourceData"/>
+<property name="columnFillerTest.sv, 378, 639" value="1" type="GuiResourceData"/>
+<property name="columnFillerTest.sv, 383, 639" value="1" type="GuiResourceData"/>
+<property name="columnFillerTest.sv, 426, 602" value="1" type="GuiResourceData"/>
+<property name="columnFillerTest.sv, 48, 559" value="1" type="GuiResourceData"/>
+<property name="columnFillerTest.sv, 483, 562" value="1" type="GuiResourceData"/>
+<property name="columnFillerTest.sv, 51, 603" value="1" type="GuiResourceData"/>
+<property name="columnFillerTest.sv, 54, 550" value="1" type="GuiResourceData"/>
+<property name="columnFillerTest.sv, 58, 600" value="1" type="GuiResourceData"/>
+<property name="columnFillerTest.sv, 642, 632" value="1" type="GuiResourceData"/>
+<property name="columnFillerTest.sv, 84, 642" value="1" type="GuiResourceData"/>
+<property name="columnFillerTest.sv, 86, 563" value="1" type="GuiResourceData"/>
+<property name="columnFillerTest.sv, 862, 605" value="1" type="GuiResourceData"/>
+<property name="columnFillerTest.sv, 91, 607" value="1" type="GuiResourceData"/>
+<property name="columnFillerTest.sv, 92, 603" value="1" type="GuiResourceData"/>
+<property name="columnFillerTest.sv, 93, 599" value="1" type="GuiResourceData"/>
+<property name="columnFillerTest.sv, 95, 602, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="columnFillerTest.sv, 96, 599" value="1" type="GuiResourceData"/>
 </item>
 <item name="Other">
-<property name="GuiMode" value="1" type="GuiMode"/>
+<property name="GuiMode" value="3" type="GuiMode"/>
 <property name="BatchMode" value="0" type="BatchMode"/>
-<property name="TclMode" value="0" type="TclMode"/>
+<property name="TclMode" value="1" type="TclMode"/>
 </item>
 </section>
 </application>
