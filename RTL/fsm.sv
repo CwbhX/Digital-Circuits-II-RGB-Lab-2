@@ -3,7 +3,7 @@
 module fsm(input logic clk, reset, delay_enb, col_count, row_filled,
 		  output logic col_counter_enb, row_counter_enb, sclk, blank, latch);
 		
-	typedef enum logic[5:0] {IDLE, SCLK_LOW, SCLK_HIGH, ROWS_FILLED, BLANK, LATCH} matrix_trans_table;
+	typedef enum logic[6:0] {IDLE, SCLK_LOW, SCLK_HIGH, ROWS_FILLED, BLANK, LATCH, UNLATCH} matrix_trans_table;
 	matrix_trans_table matrix_trans_state; // Instantiate our enumeration as a record of our state
 	
 	always_ff @(posedge clk) begin
@@ -84,10 +84,19 @@ module fsm(input logic clk, reset, delay_enb, col_count, row_filled,
 					row_counter_enb <= 0;                          // Disable the row count so it only counts once
 					
 					if(delay_enb) begin
-						latch <= 0;                                // Disable latch before blank is disabled in IDLE
-						matrix_trans_state <= IDLE;                // Move state to IDLE
+						matrix_trans_state <= UNLATCH;             // Move state to IDLE
 					end
 					else matrix_trans_state <= LATCH;              // Stay in LATCH state whilst waiting for delay
+				end
+				UNLATCH: begin
+					blank = 1;
+					latch = 0;                                     // Disable latch before blank is disabled in IDLE
+					sclk <= 0;
+					col_counter_enb <= 0;
+					row_counter_enb <= 0;
+					
+					if(delay_enb) matrix_trans_state <= IDLE;
+					else matrix_trans_state <= UNLATCH;
 				end
 				
 				default: matrix_trans_state <= IDLE;
