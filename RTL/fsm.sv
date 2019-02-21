@@ -89,6 +89,8 @@ module fsm(input logic clk, reset, delay_enb, col_count, row_filled,
 					end
 					else matrix_trans_state <= LATCH;              // Stay in LATCH state whilst waiting for delay
 				end
+				
+				default: matrix_trans_state <= IDLE;
 			endcase
 		end
 	end
