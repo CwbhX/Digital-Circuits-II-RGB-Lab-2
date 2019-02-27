@@ -47,3 +47,11 @@ project_1/project_1.xpr
 project_1/project_1.cache/wt/java_command_handlers.wdf
 project_1/project_1.cache/wt/project.wpc
 project_1/project_1.cache/wt/webtalk_pa.xml
+*.rpx
+*.vdi
+*.bit
+*.lpr
+*.xml
+*.wpc
+*.wdf
+*.wcfg

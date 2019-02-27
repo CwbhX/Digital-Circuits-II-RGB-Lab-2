@@ -2,7 +2,7 @@
 
 module top(input logic clk, reset_button,
 		  output logic sclk, latch, blank,
-		  output logic [2:0] LED_Top, LED_Bottom, Row_select);
+		  output logic [2:0] LED_Top, LED_Bottom, row_select);
 	
 	// Debounce the reset button
 	logic reset_debounced;
