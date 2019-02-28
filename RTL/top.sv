@@ -10,7 +10,7 @@ module top(input logic clk, reset_button,
 	
 	// Setup the delay enable signal
 	logic delay_enable;
-	delay_enb #(.DELAY_NS(300)) .delay_enabler(.clk(clk), .rst(reset_debounced), .clr(0), .enb_out(delay_enable));
+	delay_enb #(.DELAY_NS(300)) delay_enabler(.clk(clk), .rst(reset_debounced), .clr(0), .enb_out(delay_enable));
 	
 	// Setup the row counter module
 	logic row_counter_enable;

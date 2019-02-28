@@ -17,7 +17,7 @@ module pixel_generator(input logic clk, reset,
 				end
 				3'd1: begin
 					LED_Top <= 3'b000;    // Black
-					LED_Bottom <- 3'b000; // Black
+					LED_Bottom <= 3'b000; // Black
 				end
 				3'd2: begin
 					LED_Top <= 3'b100;     // Red
